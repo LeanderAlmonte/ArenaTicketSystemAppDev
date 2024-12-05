@@ -27,5 +27,10 @@ namespace ArenaTicketSystem
             SearchPage searchPage = new SearchPage();   
             searchPage.Show();
         }
+
+        private void YTlabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

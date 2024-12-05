@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.searchButton = new System.Windows.Forms.Button();
             this.YTlabel = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -36,7 +37,7 @@
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(344, 392);
+            this.searchButton.Location = new System.Drawing.Point(668, 372);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(191, 45);
             this.searchButton.TabIndex = 0;
@@ -47,18 +48,19 @@
             // YTlabel
             // 
             this.YTlabel.AutoSize = true;
-            this.YTlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.YTlabel.Location = new System.Drawing.Point(12, 18);
+            this.YTlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YTlabel.Location = new System.Drawing.Point(614, 20);
             this.YTlabel.Name = "YTlabel";
-            this.YTlabel.Size = new System.Drawing.Size(223, 39);
+            this.YTlabel.Size = new System.Drawing.Size(160, 29);
             this.YTlabel.TabIndex = 1;
             this.YTlabel.Text = "Your Tickets :";
+            this.YTlabel.Click += new System.EventHandler(this.YTlabel_Click);
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 73);
+            this.richTextBox1.Location = new System.Drawing.Point(619, 61);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(922, 290);
+            this.richTextBox1.Size = new System.Drawing.Size(312, 290);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             // 
@@ -70,8 +72,9 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.YTlabel);
             this.Controls.Add(this.searchButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HomePage";
-            this.Text = "HomePage";
+            this.Text = "Home Page";
             this.Load += new System.EventHandler(this.HomePage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

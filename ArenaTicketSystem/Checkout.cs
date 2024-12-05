@@ -16,5 +16,10 @@ namespace ArenaTicketSystem
         {
             InitializeComponent();
         }
+
+        private void Checkout_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

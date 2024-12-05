@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.enterButton = new System.Windows.Forms.Button();
             this.userLabel = new System.Windows.Forms.Label();
             this.passLabel = new System.Windows.Forms.Label();
@@ -39,7 +40,7 @@
             // 
             // enterButton
             // 
-            this.enterButton.Location = new System.Drawing.Point(232, 327);
+            this.enterButton.Location = new System.Drawing.Point(156, 229);
             this.enterButton.Name = "enterButton";
             this.enterButton.Size = new System.Drawing.Size(151, 50);
             this.enterButton.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             this.userLabel.AutoSize = true;
             this.userLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userLabel.Location = new System.Drawing.Point(63, 106);
+            this.userLabel.Location = new System.Drawing.Point(12, 106);
             this.userLabel.Name = "userLabel";
             this.userLabel.Size = new System.Drawing.Size(87, 17);
             this.userLabel.TabIndex = 1;
@@ -61,7 +62,7 @@
             // 
             this.passLabel.AutoSize = true;
             this.passLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passLabel.Location = new System.Drawing.Point(63, 228);
+            this.passLabel.Location = new System.Drawing.Point(12, 154);
             this.passLabel.Name = "passLabel";
             this.passLabel.Size = new System.Drawing.Size(77, 17);
             this.passLabel.TabIndex = 2;
@@ -69,14 +70,14 @@
             // 
             // userTbox
             // 
-            this.userTbox.Location = new System.Drawing.Point(232, 106);
+            this.userTbox.Location = new System.Drawing.Point(141, 106);
             this.userTbox.Name = "userTbox";
             this.userTbox.Size = new System.Drawing.Size(197, 20);
             this.userTbox.TabIndex = 3;
             // 
             // passTbox
             // 
-            this.passTbox.Location = new System.Drawing.Point(232, 238);
+            this.passTbox.Location = new System.Drawing.Point(141, 154);
             this.passTbox.Name = "passTbox";
             this.passTbox.Size = new System.Drawing.Size(197, 20);
             this.passTbox.TabIndex = 4;
@@ -85,11 +86,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(140, 11);
+            this.label3.Location = new System.Drawing.Point(63, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(289, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Welcome To The Ticket Booker";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // comboBox1
             // 
@@ -97,7 +99,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "English",
             "French"});
-            this.comboBox1.Location = new System.Drawing.Point(509, 30);
+            this.comboBox1.Location = new System.Drawing.Point(404, 15);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 6;
@@ -106,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 408);
+            this.ClientSize = new System.Drawing.Size(560, 321);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.passTbox);
@@ -114,6 +116,7 @@
             this.Controls.Add(this.passLabel);
             this.Controls.Add(this.userLabel);
             this.Controls.Add(this.enterButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LogIn";
             this.Text = "LogIn";
             this.Load += new System.EventHandler(this.LogIn_Load);

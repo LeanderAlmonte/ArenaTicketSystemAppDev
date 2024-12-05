@@ -23,11 +23,18 @@ namespace ArenaTicketSystem
         }
 
         private void enterButton_Click(object sender, EventArgs e)
-        { 
+        {
+            
                 HomePage newform = new HomePage();
-            newform.Show();
+                newform.Show();
+                
            
-            Application.Exit();
+            
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
